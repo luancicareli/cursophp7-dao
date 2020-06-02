@@ -31,10 +31,17 @@ $aluno->insert();
 echo $aluno;*/
 
 //UPDATE USER
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->loadById(3);
 $usuario->update("username","pass123");
+echo $usuario;*/
 
+//DELETE USER
+$usuario = new Usuario();
+$usuario->loadById(3);
+$usuario->delete();
 echo $usuario;
+
+
 
 ?>
